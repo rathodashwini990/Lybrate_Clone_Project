@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+    <script src="https://kit.fontawesome.com/8f856e9bb7.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/signup.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+     <!-- icon -->
+     <link rel="icon" href="https://assets.lybrate.com/q_auto,f_auto,h_20,w_20/imgs/product/d2d/PatientGoldMembership/lybrate_icon_red_large.png">
+     <!--  -->
+ 
+
+
+</head>
+<body>
+    <div id="snav">
+
+    </div>
+
+    <div id="signup">
+      
+    </div>
+</body>
+</html>
+
+<script type="module">
+
+import navbar from "./componants/navbar.js"
+
+document.querySelector("#snav").innerHTML=navbar()
+
+    import register from "./componants/signup.js";
+
+    document.getElementById("signup").innerHTML = register();
+
+    document.getElementById("register").addEventListener("click",registrationFunction);
+
+
+    async function registrationFunction(e){
+        e.preventDefault();
+        let signup_data = {
+          name: document.getElementById("name1").value,
+          mobile: document.getElementById("mobile1").value,
+          username: document.getElementById("name1").value,
+          password: document.getElementById("password1").value,
+          email: document.getElementById("email1").value,
+          description: "A Transformation in Masai",
+        };
+
+        signup_data = JSON.stringify(signup_data);
+
+        console.log(signup_data);
+
+        let reg_api = "https://masai-api-mocker.herokuapp.com/auth/register";
+
+        let response = await fetch(reg_api, {
+          
+          method: "POST",
+
+          body: signup_data,
+
+          headers: {
+            "Content-Type" : "application/json"
+          },
+
+        });
+
+        let data = await response.json();
+
+        console.log(data,"Hello");
+
+        window.location.href = "login.html";
+
+      }
+
+</script>
