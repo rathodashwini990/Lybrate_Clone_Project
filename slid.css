@@ -1,0 +1,51 @@
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  } */
+  /* @keyframes fade{
+    from{
+      opacity:0.4;
+    }
+    to{
+      opacity:1;
+    }
+  } */
+  
+  
+  
+  #slider{
+    /* padding-top: 160px; */
+     /* margin:0 auto; */
+     width:100%;
+     overflow:hidden;
+   }
+   
+   .slides{
+     overflow:hidden;
+     animation-name:fade;
+     animation-duration:1s;
+     display:none;
+   }
+   
+   img{
+     width:100%;
+   }
+   
+   #dot{
+     margin:0 auto;
+     text-align:center;
+   }
+   .dot{
+     display:inline-block;
+     border-radius:50%;
+     background:#d3d3d3;
+     padding:8px;
+     margin:10px 5px;
+   }
+   
+   .active{
+     background:teal;
+
+   }
+   
