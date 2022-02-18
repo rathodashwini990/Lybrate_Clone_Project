@@ -31,7 +31,7 @@ Lybrate is a mobile healthcare technology company that developed an online platf
   <ul>
     <li>Landing Page</li>
     <li>Sign in /sign up</li>
-    <li>Diffent Product Sections</li>
+    <li>Different Product Sections</li>
     <li>Cart Section</li>
     <li>Address Page</li>
     <li>Payment Page</li>
