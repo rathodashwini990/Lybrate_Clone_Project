@@ -3,7 +3,7 @@ This is the clone of Lybrate.com. We started this project as a four member team 
 <h1>Table of contents</h1>
 <hr>
 <ul>
-  <a href="#pantaloons"><li>Basic inference about the company</li></a>
+  <a href="#lybrate"><li>Basic inference about the company</li></a>
   <a href="#tech"><li>Frameworks Used</li></a>
   <a href="#fun"><li>Added Functionalities</li></a>
   <a href="#feat"><li>Added Features</li></a>
